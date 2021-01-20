@@ -1,0 +1,904 @@
+<!doctype html>
+<link rel="icon" href="icon.jpg">
+   <div class="loading">
+    <div class="lds-heart"><div></div></div>
+   </div>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>Restaurant Website</title>
+    <meta name="title" content="Restaurant Website">
+    <meta name="description" content="For test Front end Web Design">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hppm1997.000webhostapp.com/restauran">
+    <meta property="og:title" content="Restaurant Website">
+    <meta property="og:description" content="For test Front end Web Design">
+    <meta property="og:image" content="https://i.pinimg.com/originals/4e/24/f5/4e24f523182e09376bfe8424d556610a.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hppm1997.000webhostapp.com/restaurant">
+    <meta property="twitter:title" content="Restaurant Website">
+    <meta property="twitter:description" content="For test Front end Web Design">
+    <meta property="twitter:image" content="https://i.pinimg.com/originals/4e/24/f5/4e24f523182e09376bfe8424d556610a.png">
+
+    <title>HOME</title>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/feather-icon/feather.css">
+    <link rel="stylesheet" href="vendor/venobox/venobox.css">
+    <link rel="stylesheet" href="vendor/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .loading{
+            background-color: #fff;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .lds-heart {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            transform: rotate(45deg);
+            transform-origin: 40px 40px;
+        }
+        .lds-heart div {
+            top: 32px;
+            left: 32px;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: red;
+            animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        .lds-heart div:after,
+        .lds-heart div:before {
+            content: " ";
+            position: absolute;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: red;
+        }
+        .lds-heart div:before {
+            left: -24px;
+            border-radius: 50% 0 0 50%;
+        }
+        .lds-heart div:after {
+            top: -24px;
+            border-radius: 50% 50% 0 0;
+        }
+        @keyframes lds-heart {
+            0% {
+                transform: scale(0.95);
+            }
+            5% {
+                transform: scale(1.1);
+            }
+            39% {
+                transform: scale(0.85);
+            }
+            45% {
+                transform: scale(1);
+            }
+            60% {
+                transform: scale(0.95);
+            }
+            100% {
+                transform: scale(0.9);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!--nav bar start-->
+    <section class="nav-bar container-fluid">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <nav class="navbar navbar-expand-lg navbar-dark nav-list p-0 animate__animated animate__fadeInDownBig">
+                            <a class="navbar-brand" href="index.html" style="font-size: 16px">Zetta Hotels</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="feather-menu text-white" style="font-size: 35px"></i>
+                            </button>
+
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item mr-4 show-active">
+                                        <a class="nav-link text-white" href="index.html">HOME</a>
+                                    </li>
+                                    <li class="nav-item dropdown mr-4">
+                                        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            ROOMS
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="rooms.html">Check Rooms</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item mr-4">
+                                        <a class="nav-link text-white" href="restaurant.html">RESTAURANT</a>
+                                    </li>
+                                    <li class="nav-item mr-4">
+                                        <a class="nav-link text-white" href="aboutus.html">ABOUT US</a>
+                                    </li>
+                                    <li class="nav-item mr-4">
+                                        <a class="nav-link text-white" href="#">BLOG</a>
+                                    </li>
+                                    <li class="nav-item mr-4 mb-0">
+                                        <a class="nav-link text-white" href="contact.html">CONTACT</a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--nav bar end-->
+
+    <!--home sheet one home start-->
+    <section class="home-one container-fluid min-vh-100">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="home-content wow animate__fadeIn delay-half">
+                            <h1 class="text-white home-content-header">The best hotel <br>
+                                you will ever need
+                            </h1>
+                            <p class="text-white home-content-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi cupiditate deserunt eaque enim eos error exercitationem expedita
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    check date row start-->
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 wow animate__fadeIn animate__delay-1s">
+                        <form action="">
+                            <div class="row align-items-end justify-content-center check-date">
+                                <div class="col-12 col-lg-3">
+                                    <div>
+                                        <label for="" class="text-primary">Check In Date</label>
+                                        <input type="date" class="bg-light form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <div>
+                                        <label for="" class="text-primary">Check Out Date</label>
+                                        <input type="date" class="bg-light form-control">
+                                    </div>
+                                </div>
+                                <div class="col-10 col-lg-3">
+                                    <div>
+                                        <label for="" class="text-primary">Rooms</label>
+                                        <input type="text" class="bg-light form-control" placeholder="rooms">
+                                    </div>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="feather-navigation"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    check date row end-->
+    </section>
+    <!--home sheet one home end-->
+
+    <!--home sheet two about us start-->
+    <section class="home-two container">
+        <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-7">
+                <div class="for-about wow animate__fadeInLeftBig ">
+                    <a href="#" class="text-primary text-decoration-none">ABOUT US</a>
+                    <p class="" style="font-size: 30px">Trust and quality <br>
+                        are our atuus</p>
+                    <p class="for-about-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    </p>
+                    <p class="for-about-text">
+                        Lorem ipsum consectetur adipisicing elit. Accusamus ad aliquid animi consequatur cum deleniti dignissimos, eos, eveniet explicabo fugit harum nostrum omnis perferendis possimus quam rerum, similique velit voluptatum.
+                    </p>
+                    <a href="" class="btn btn-primary px-4"><span>read more</span>
+                        <i class="feather-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="for-about-two">
+                    <div class="row">
+                        <div class="col-6 p-0">
+                            <div class="mr-2 wow animate__fadeIn delay-half" data-toggle="tooltip" data-placement="top" title="Click Image To View">
+                                <a href="homepage-img/up.png" data-gall="list" class="venobox">
+                                    <img src="homepage-img/up.png" class="w-100" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 p-0">
+                            <div class="ml-2 wow animate__fadeIn animate__delay-1s" data-toggle="tooltip" data-placement="top" title="Click Image To View">
+                                <a href="homepage-img/chelsea-gates-0653_wY0nRc-unsplash@2x.png" data-gall="list" class="venobox">
+                                    <img src="homepage-img/chelsea-gates-0653_wY0nRc-unsplash@2x.png" class="w-100" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0">
+                            <div class="mt-3 wow animate__fadeIn delayOne-half" data-toggle="tooltip" data-placement="top" title="Click Image To View">
+                                <a href="homepage-img/eddi-aguirre-ZAVHbpOn4Jk-unsplash@2x.png"class="venobox">
+                                    <img src="homepage-img/eddi-aguirre-ZAVHbpOn4Jk-unsplash@2x.png" class="w-100" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--home sheet two about us end-->
+
+    <!--home sheet three about us start-->
+    <section class="home-three container-fluid min-vh-100">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="for-about-second wow animate__fadeInDownBig">
+                            <a href="#" class="text-primary text-decoration-none">ABOUT US</a>
+                            <p class="text-white" style="font-size: 30px">We bring you the<br>
+                                finest details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row slide wow animate__fadeIn animate__delay-1s">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="bg-primary rounded-circle p-2 mx-auto" alt="">
+                                    <h5 class="mt-3">Free Wifi <br>
+                                        to stay connected</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="mx-auto bg-primary rounded-circle p-2" alt="">
+                                    <h5 class="mt-3">4K Television and <br>
+                                        Netflix included</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="mx-auto bg-primary rounded-circle p-2" alt="">
+                                    <h5 class="mt-3">Span zone where <br>
+                                        you can chill</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="mx-auto bg-primary rounded-circle p-2" alt="">
+                                    <h5 class="mt-3">Spacious rooms<br>
+                                        for awesome parties</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="bg-primary rounded-circle p-2 mx-auto" alt="">
+                                    <h5 class="mt-3">Free Wifi <br>
+                                        to stay connected</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="mx-auto bg-primary rounded-circle p-2" alt="">
+                                    <h5 class="mt-3">4K Television and <br>
+                                        Netflix included</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="mx-auto bg-primary rounded-circle p-2" alt="">
+                                    <h5 class="mt-3">Span zone where <br>
+                                        you can chill</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="mx-auto bg-primary rounded-circle p-2" alt="">
+                                    <h5 class="mt-3">Spacious rooms<br>
+                                        for awesome parties</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="bg-primary rounded-circle p-2 mx-auto" alt="">
+                                    <h5 class="mt-3">Free Wifi <br>
+                                        to stay connected</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="mx-auto bg-primary rounded-circle p-2" alt="">
+                                    <h5 class="mt-3">4K Television and <br>
+                                        Netflix included</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="mx-auto bg-primary rounded-circle p-2" alt="">
+                                    <h5 class="mt-3">Span zone where <br>
+                                        you can chill</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card big rounded-0 mt-2">
+                            <div class="card-body">
+                                <div class="logo text-center mt-2">
+                                    <img src="homepage-img/hompage-logo/001-hotel-1@2x.png" class="mx-auto bg-primary rounded-circle p-2" alt="">
+                                    <h5 class="mt-3">Spacious rooms<br>
+                                        for awesome parties</h5>
+                                    <p class="mt-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--home sheet three about us end-->
+
+    <!--home sheet four testimonials start-->
+    <section class="home-four container-fluid" style="height: 60vh">
+        <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-7 p-0">
+                <div class="bg-light ph-slide" style="height: 100%;padding:60px 120px 0px 120px">
+                    <div class="wow animate__fadeInDownBig">
+                        <a href="#" class="text-primary text-decoration-none">TESTIMONIALS</a>
+                        <p class="" style="font-size: 30px">We trust out customers<br>
+                            and they trust us too</p>
+                    </div>
+
+                    <div class="customer-slide wow animate__fadeInLeft animate__delay-1s">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="homepage-img/user.png" alt="">
+                                <div class="ml-4">
+                                    <h5>John Doe</h5>
+                                    <span class="text-black-50">IT Engineer</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 customer-text">
+                                I'm very glad I had the opportunity to visit this hotel. The <br> stuff is very friendly and I will definetly visit the hotel
+                                <br> again next year.
+                            </p>
+                        </div>
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="homepage-img/avatar1.jpg" class="rounded-circle" alt="">
+                                <div class="ml-4">
+                                    <h5>Jen</h5>
+                                    <span class="text-black-50">HR Manager</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 customer-text">
+                                I'm very glad I had the opportunity to visit this hotel. The <br> stuff is very friendly and I will definetly visit the hotel
+                                <br> again next year.
+                            </p>
+                        </div>
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="homepage-img/avatar2.jpg" class="rounded-circle" alt="">
+                                <div class="ml-4">
+                                    <h5>Tylor</h5>
+                                    <span class="text-black-50">IT Team Leader</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 customer-text">
+                                I'm very glad I had the opportunity to visit this hotel. The <br> stuff is very friendly and I will definetly visit the hotel
+                                <br> again next year.
+                            </p>
+                        </div>
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="homepage-img/avatar3.jpg" class="rounded-circle" alt="">
+                                <div class="ml-4">
+                                    <h5>Mr.Jason</h5>
+                                    <span class="text-black-50">IT Software</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 customer-text">
+                                I'm very glad I had the opportunity to visit this hotel. The <br> stuff is very friendly and I will definetly visit the hotel
+                                <br> again next year.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5 p-0">
+                <div class="ph-img wow animate__fadeInUp delay-half" data-toggle="tooltip" data-placement="left" title="Click Image To View">
+                    <a href="homepage-img/up.png" class="venobox">
+                        <img src="homepage-img/up.png" class="w-100" alt="" style="transform: scaleX(-1)">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--home sheet four testimonials end-->
+
+    <!--home sheet five restaurant start-->
+    <section class="home-five container-fluid min-vh-100">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="mt-5 mb-4 pl-2 pl-lg-0 wow animate__fadeInDownBig">
+                            <a href="#" class="text-primary text-decoration-none">RESTAURANT</a>
+                            <p class="" style="font-size: 30px">Explore our menu<br>
+                                and eat what you want</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row wow animate__backInLeft delay-half foot bg-light align-items-center pl-2 pl-lg-0 mt-3 mr-lg-2 position-relative">
+                            <div class="col-4 pl-0">
+                                <div>
+                                    <img src="homepage-img/menu-img/victoria-shes-UC0HZdUitWY-unsplash@2x.png" class="w-100 rounded" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="">
+                                    <p class="mb-0 text-primary food-type">FOOD</p>
+                                    <p class="font-weight-bolder">Fresh fish and onions</p>
+                                    <span class="text-black-50 food-review">
+                                  Fresh food directly from our restaurant <br>
+                                  ready coocked for you and you familly
+                              </span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary more rounded-0">
+                                <i class="feather-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row wow animate__backInRight delay-half foot bg-light align-items-center pl-2 pl-lg-0 mt-3 mr-lg-2 position-relative">
+                            <div class="col-4 pl-0">
+                                <div>
+                                    <img src="homepage-img/menu-img/sheelah-brennan-UaeVmc51Ttw-unsplash@2x.png" class="w-100 rounded" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="">
+                                    <p class="mb-0 text-primary food-type">DESERT</p>
+                                    <p class="font-weight-bolder">Chocolate cupcakes</p>
+                                    <span class="text-black-50 food-review">
+                                  Fresh food directly from our restaurant <br>
+                                  ready coocked for you and you familly
+                              </span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary more rounded-0">
+                                <i class="feather-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row wow animate__backInLeft animate__delay-1s foot bg-light align-items-center pl-2 pl-lg-0 mt-3 mr-lg-2 position-relative">
+                            <div class="col-4 pl-0">
+                                <div>
+                                    <img src="homepage-img/menu-img/sheelah-brennan-UaeVmc51Ttw-unsplash@2x.png" class="w-100 rounded" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="">
+                                    <p class="mb-0 text-primary food-type">DESERT</p>
+                                    <p class="font-weight-bolder">Chocolate cupcakes</p>
+                                    <span class="text-black-50 food-review">
+                                  Fresh food directly from our restaurant <br>
+                                  ready coocked for you and you familly
+                              </span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary more rounded-0">
+                                <i class="feather-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row wow animate__backInRight animate__delay-1s foot bg-light align-items-center pl-2 pl-lg-0 mt-3 mr-lg-2 position-relative">
+                            <div class="col-4 pl-0">
+                                <div>
+                                    <img src="homepage-img/menu-img/victoria-shes-UC0HZdUitWY-unsplash@2x.png" class="w-100 rounded" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="">
+                                    <p class="mb-0 text-primary food-type">FOOD</p>
+                                    <p class="font-weight-bolder">Fresh fish and onions</p>
+                                    <span class="text-black-50 food-review">
+                                  Fresh food directly from our restaurant <br>
+                                  ready coocked for you and you familly
+                              </span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary more rounded-0">
+                                <i class="feather-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--home sheet five restaurant end-->
+
+    <!--home sheet six blog start-->
+    <section class="home-six container-fluid min-vh-100">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="mt-4 mb-5 pl-2 pl-lg-0 wow animate__fadeInDownBig">
+                            <a href="#" class="text-primary text-decoration-none">BLOG</a>
+                            <p class="" style="font-size: 30px">Read our newest blog<br>
+                                post right away</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <div class="bg-light pb-4 blog-item mb-3 mr-md-3 wow animate__flipInX delay-half">
+                            <img src="homepage-img/blog-img/vicky-sim-mj51pZwan9c-unsplash@2x.png" class="w-100" alt="">
+                            <div class="text-center mt-3">
+                                <p class="mb-1 text-primary">FOOD AND LIFE</p>
+                                <h5 class="">Succeed in hotel business</h5>
+                                <span class="text-black-50">
+                                  Fresh food directly from our restaurant <br>
+                                  ready coocked for you and you familly
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <div class="bg-light pb-4 blog-item mb-3 mr-md-3 wow animate__flipInX animate__delay-1s">
+                            <img src="homepage-img/blog-img/victoria-shes-UC0HZdUitWY-unsplash.png" class="w-100" alt="">
+                            <div class="text-center mt-3">
+                                <p class="mb-1 text-primary">COOKING</p>
+                                <h5 class="">Cooking delicious food</h5>
+                                <span class="text-black-50">
+                                  Fresh food directly from our restaurant <br>
+                                  ready coocked for you and you familly
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <div class="bg-light pb-4 blog-item mb-3 mr-md-3 wow animate__flipInX delayOne-half">
+                            <img src="homepage-img/blog-img/sheelah-brennan-UaeVmc51Ttw-unsplash@2x.png" class="w-100" alt="">
+                            <div class="text-center mt-3">
+                                <p class="mb-1 text-primary">FRUITS</p>
+                                <h5 class="">Getting fresh fruits</h5>
+                                <span class="text-black-50">
+                                  Fresh food directly from our restaurant <br>
+                                  ready coocked for you and you familly
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <div class="bg-light pb-4 blog-item mb-3 mr-md-3 wow animate__flipInY delayOne-half">
+                            <img src="homepage-img/blog-img/sheelah-brennan-UaeVmc51Ttw-unsplash@2x.png" class="w-100" alt="">
+                            <div class="text-center mt-3">
+                                <p class="mb-1 text-primary">FRUITS</p>
+                                <h5 class="">Getting fresh fruits</h5>
+                                <span class="text-black-50">
+                                  Fresh food directly from our restaurant <br>
+                                  ready coocked for you and you familly
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <div class="bg-light pb-4 blog-item mb-3 mr-md-3 wow animate__flipInY animate__delay-1s">
+                            <img src="homepage-img/blog-img/victoria-shes-UC0HZdUitWY-unsplash.png" class="w-100" alt="">
+                            <div class="text-center mt-3">
+                                <p class="mb-1 text-primary">COOKING</p>
+                                <h5 class="">Cooking delicious food</h5>
+                                <span class="text-black-50">
+                                  Fresh food directly from our restaurant <br>
+                                  ready coocked for you and you familly
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <div class="bg-light pb-4 blog-item mb-3 mr-md-3 wow animate__flipInY delay-half">
+                            <img src="homepage-img/blog-img/vicky-sim-mj51pZwan9c-unsplash@2x.png" class="w-100" alt="">
+                            <div class="text-center mt-3">
+                                <p class="mb-1 text-primary">FOOD AND LIFE</p>
+                                <h5 class="">Succeed in hotel business</h5>
+                                <span class="text-black-50">
+                                  Fresh food directly from our restaurant <br>
+                                  ready coocked for you and you familly
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--home sheet six blog end-->
+
+    <!--home last sheet photos start-->
+    <section class="home-last container-fluids min-vh-100 overflow-hidden">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="pl-4 pl-md-2 p-lg-0 mt-5 mb-4 wow animate__fadeInDownBig">
+                            <a href="#" class="text-primary text-decoration-none">PHOTOS</a>
+                            <p class="" style="font-size: 30px">See out lastest photos<br>
+                                from restaurant and hotel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 p-0">
+                <div class="wow animate__fadeIn animate__delay-1s">
+                    <img src="homepage-img/contact-img/mohamed-ajufaan-GFcWwwGNu_w-unsplash@2x.png" class="w-100" alt="">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 p-0">
+                <div class="wow animate__fadeIn animate__delay-1s">
+                    <img src="homepage-img/contact-img/manuel-moreno-DGa0LQ0yDPc-unsplash@2x.png" class="w-100" alt="">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 p-0">
+                <div class="wow animate__fadeIn animate__delay-1s">
+                    <img src="homepage-img/contact-img/rhema-kallianpur-jbJ-_hw2yag-unsplash@2x.png" class="w-100" alt="">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 p-0">
+                <div class="wow animate__fadeIn animate__delay-1s">
+                    <img src="homepage-img/contact-img/eddi-aguirre-ZAVHbpOn4Jk-unsplash@2x.png" class="w-100" alt="">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="p-5 wow animate__fadeIn animate__delay-1s" style="background-color: #000">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-5">
+                            <div class="text-white">
+                                <h4 class="my-4">Zetta Hotels</h4>
+                                <p>
+                                    Our hotel is an image of quality and <br>
+                                    profesionalism combined with hard work <br>
+                                    and precision. You can expect only the <br>
+                                    best services from our staff.
+                                </p>
+                                <div class="link">
+                                    <a href="#" class="btn btn-primary rounded-circle mr-2">
+                                        <i class="feather-facebook"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-primary rounded-circle mr-2">
+                                        <i class="feather-twitter"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger rounded-circle">
+                                        <i class="feather-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-2">
+                            <div class="text-white">
+                                <p class="my-4" style="font-size: 20px">Useful links</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#" class="text-primary text-decoration-none">Blog</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-primary text-decoration-none">Rooms</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-primary text-decoration-none">Gift Card</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-primary text-decoration-none">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6  col-lg-2">
+                            <div class="text-white">
+                                <p class="my-4" style="font-size: 20px">Privacy</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#" class="text-primary text-decoration-none">Career</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-primary text-decoration-none">About Us</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-primary text-decoration-none">Contact Us</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-primary text-decoration-none">Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6  col-lg-3">
+                            <div class="text-white">
+                                <p class="my-4" style="font-size: 20px">Contact Info</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <div class="d-flex">
+                                            <i class="feather-mail text-primary mr-2" style="font-size: 25px"></i>
+                                            <p>example@yahoo.com</p>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="d-flex">
+                                            <i class="feather-phone text-primary mr-2" style="font-size: 25px"></i>
+                                            <p>+3 320 422 4254</p>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="d-flex">
+                                            <i class="feather-map-pin text-primary mr-2" style="font-size: 25px"></i>
+                                            <p>Main Str Chicago Ilinois</p>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!--home last sheet photos end-->
+
+
+<script src="vendor/jquery/dist/jquery.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="vendor/venobox/venobox.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="vendor/slick-1.8.1/slick/slick.min.js"></script>
+<script src="vendor/wow.js/dist/wow.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+

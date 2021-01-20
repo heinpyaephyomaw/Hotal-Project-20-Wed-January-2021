@@ -1,0 +1,511 @@
+<!doctype html>
+<link rel="icon" href="icon.jpg">
+<div class="loading">
+    <div class="lds-heart"><div></div></div>
+</div>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROOM</title>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/feather-icon/feather.css">
+    <link rel="stylesheet" href="vendor/venobox/venobox.css">
+    <link rel="stylesheet" href="vendor/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .loading{
+            background-color: #fff;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .lds-heart {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            transform: rotate(45deg);
+            transform-origin: 40px 40px;
+        }
+        .lds-heart div {
+            top: 32px;
+            left: 32px;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: red;
+            animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        .lds-heart div:after,
+        .lds-heart div:before {
+            content: " ";
+            position: absolute;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: red;
+        }
+        .lds-heart div:before {
+            left: -24px;
+            border-radius: 50% 0 0 50%;
+        }
+        .lds-heart div:after {
+            top: -24px;
+            border-radius: 50% 50% 0 0;
+        }
+        @keyframes lds-heart {
+            0% {
+                transform: scale(0.95);
+            }
+            5% {
+                transform: scale(1.1);
+            }
+            39% {
+                transform: scale(0.85);
+            }
+            45% {
+                transform: scale(1);
+            }
+            60% {
+                transform: scale(0.95);
+            }
+            100% {
+                transform: scale(0.9);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!--nav bar start-->
+<section class="nav-bar container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <nav class="navbar navbar-expand-lg navbar-dark nav-list p-0 animate__animated animate__fadeInDownBig">
+                        <a class="navbar-brand" href="#" style="font-size: 16px">Zetta Hotels</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="feather-menu text-white" style="font-size: 35px"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item mr-4">
+                                    <a class="nav-link text-white" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item dropdown mr-4 show-active">
+                                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        ROOMS
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="rooms.html">Check Rooms</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item mr-4">
+                                    <a class="nav-link text-white" href="restaurant.html">RESTAURANT</a>
+                                </li>
+                                <li class="nav-item mr-4">
+                                    <a class="nav-link text-white" href="aboutus.html">ABOUT US</a>
+                                </li>
+                                <li class="nav-item mr-4">
+                                    <a class="nav-link text-white" href="#">BLOG</a>
+                                </li>
+                                <li class="nav-item mr-4 mb-0">
+                                    <a class="nav-link text-white" href="contact.html">CONTACT</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--nav bar end-->
+
+<!--room sheet one home start-->
+<section class="home-rooms container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="home-room-content wow animate__fadeIn delay-half">
+                        <h1 class="text-white home-content-rooms-header">Rooms</h1>
+                        <a href="index.html" class="text-white text-decoration-none">Home</a> <span class="text-white">|</span>
+                        <a href="#" class="text-white text-decoration-none">Rooms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--room sheet one home end-->
+
+<!--room sheet two about us start-->
+<section class="home-two container min-vh-100">
+    <div class="row">
+        <div class="col-12 p-lg-0">
+            <div class="for-about-rooms wow animate__fadeInDownBig">
+                <a href="#" class="text-primary text-decoration-none">ABOUT US</a>
+                <p class="" style="font-size: 30px">Trust and quality <br>
+                    are our atuus</p>
+            </div>
+
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="row wow animate__backInLeft delay-half foot bg-light align-items-center pl-2 pl-lg-0 mt-3 mr-lg-2 position-relative">
+                <div class="col-4 pl-0">
+                    <div>
+                        <img src="roomspage-img/deborah-cortelazzi-gREquCUXQLI-unsplash@2x.png" class="w-100 rounded" alt="">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="">
+                        <p class="mb-0 text-primary food-type">BIG</p>
+                        <p class="font-weight-bolder">Spacious Room</p>
+                        <span class="text-black-50 food-review">
+                                  The most spacious room you will ever see <br>
+                                  in our hotel. Equipped with span and <br>
+                                  warm beds
+                              </span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary more-rooms rounded-0">
+                    <i class="feather-arrow-right more-rooms-icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="row wow animate__backInRight delay-half foot bg-light align-items-center pl-2 pl-lg-0 mt-3 mr-lg-2 position-relative">
+                <div class="col-4 pl-0">
+                    <div>
+                        <img src="roomspage-img/christopher-jolly-GqbU78bdJFM-unsplash@2x.png" class="w-100 rounded" alt="">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="">
+                        <p class="mb-0 text-primary food-type">SMALL</p>
+                        <p class="font-weight-bolder">Small Cheap Room</p>
+                        <span class="text-black-50 food-review">
+                                  Smallest and the most economic room in <br>
+                                  our hotel. Save an extra buck for your <br>
+                                  holiday
+                              </span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary more-rooms rounded-0">
+                    <i class="feather-arrow-right more-rooms-icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="row wow animate__backInLeft animate__delay-1s foot bg-light align-items-center pl-2 pl-lg-0 mt-3 mr-lg-2 position-relative">
+                <div class="col-4 pl-0">
+                    <div>
+                        <img src="roomspage-img/minh-pham-1_B4Zzh7UpQ-unsplash@2x.png" class="w-100 rounded" alt="">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="">
+                        <p class="mb-0 text-primary food-type">PREMIUM</p>
+                        <p class="font-weight-bolder">Big Room</p>
+                        <span class="text-black-50 food-review">
+                                  Biggest room in our hotel fully equipped <br>
+                                  with Wi-fi and hot coffee
+                              </span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary more-rooms rounded-0">
+                    <i class="feather-arrow-right more-rooms-icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="row wow animate__backInRight animate__delay-1s foot bg-light align-items-center pl-2 pl-lg-0 mt-3 mr-lg-2 position-relative">
+                <div class="col-4 pl-0">
+                    <div>
+                        <img src="roomspage-img/sven-brandsma-GmRiN7tVW1w-unsplash@2x.png" class="w-100 rounded" alt="">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="">
+                        <p class="mb-0 text-primary food-type">EXPENSIVE</p>
+                        <p class="font-weight-bolder">Expensive Luxury Room</p>
+                        <span class="text-black-50 food-review">
+                                  The most expensive room available for <br>
+                                  milionars and very rich people
+                              </span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary more-rooms rounded-0">
+                    <i class="feather-arrow-right more-rooms-icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="row wow animate__backInLeft delayOne-half foot bg-light align-items-center pl-2 pl-lg-0 mt-3 mr-lg-2 position-relative">
+                <div class="col-4 pl-0">
+                    <div>
+                        <img src="roomspage-img/deborah-cortelazzi-gREquCUXQLI-unsplash@2x.png" class="w-100 rounded" alt="">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="">
+                        <p class="mb-0 text-primary food-type">BIG</p>
+                        <p class="font-weight-bolder">Spacious Room</p>
+                        <span class="text-black-50 food-review">
+                                  The most spacious room you will ever see <br>
+                                  in our hotel. Equipped with span and <br>
+                                  warm beds
+                              </span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary more-rooms rounded-0">
+                    <i class="feather-arrow-right more-rooms-icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 mb-5">
+            <div class="row wow animate__backInRight delayOne-half foot bg-light align-items-center pl-2 pl-lg-0 mt-3 mr-lg-2 position-relative">
+                <div class="col-4 pl-0">
+                    <div>
+                        <img src="roomspage-img/christopher-jolly-GqbU78bdJFM-unsplash@2x.png" class="w-100 rounded" alt="">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="">
+                        <p class="mb-0 text-primary food-type">SMALL</p>
+                        <p class="font-weight-bolder">Small Cheap Room</p>
+                        <span class="text-black-50 food-review">
+                                  Smallest and the most economic room in <br>
+                                  our hotel. Save an extra buck for your <br>
+                                  holiday
+                              </span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary more-rooms rounded-0">
+                    <i class="feather-arrow-right more-rooms-icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--room sheet two about us end-->
+
+<!--check date row start-->
+<section class="container-fluid bg-light py-5">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 wow animate__fadeIn animate__delay-1s">
+                    <form action="" >
+                        <div class="row align-items-end justify-content-center rooms-check-date">
+                            <div class="col-12 col-lg-3">
+                                <div>
+                                    <label for="" class="text-primary">Check In Date</label>
+                                    <input type="date" class="bg-light form-control">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <div>
+                                    <label for="" class="text-primary">Check Out Date</label>
+                                    <input type="date" class="bg-light form-control">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <div>
+                                    <label for="" class="text-primary">Rooms</label>
+                                    <input type="text" class="bg-light form-control" placeholder="rooms">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <div>
+                                    <label for="" class="text-primary"></label>
+                                    <a href="#" class="btn btn-primary w-100 d-flex align-items-center justify-content-center">
+                                        <span class="mr-2">Submit</span>
+                                        <i class="feather-navigation"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--check date row end-->
+
+<!--room last sheet photos start-->
+<section class="home-last container-fluids min-vh-100 overflow-hidden">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div class="pl-4 pl-md-2 p-lg-0 mt-5 mb-4 wow animate__fadeInDownBig">
+                        <a href="#" class="text-primary text-decoration-none">PHOTOS</a>
+                        <p class="" style="font-size: 30px">See out lastest photos<br>
+                            from restaurant and hotel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-lg-3 p-0">
+            <div class="wow animate__fadeIn animate__delay-1s">
+                <img src="homepage-img/contact-img/mohamed-ajufaan-GFcWwwGNu_w-unsplash@2x.png" class="w-100" alt="">
+            </div>
+        </div>
+        <div class="col-6 col-lg-3 p-0">
+            <div class="wow animate__fadeIn animate__delay-1s">
+                <img src="homepage-img/contact-img/manuel-moreno-DGa0LQ0yDPc-unsplash@2x.png" class="w-100" alt="">
+            </div>
+        </div>
+        <div class="col-6 col-lg-3 p-0">
+            <div class="wow animate__fadeIn animate__delay-1s">
+                <img src="homepage-img/contact-img/rhema-kallianpur-jbJ-_hw2yag-unsplash@2x.png" class="w-100" alt="">
+            </div>
+        </div>
+        <div class="col-6 col-lg-3 p-0">
+            <div class="wow animate__fadeIn animate__delay-1s">
+                <img src="homepage-img/contact-img/eddi-aguirre-ZAVHbpOn4Jk-unsplash@2x.png" class="w-100" alt="">
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="p-5 wow animate__fadeIn animate__delay-1s" style="background-color: #000">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="text-white">
+                            <h4 class="my-4">Zetta Hotels</h4>
+                            <p>
+                                Our hotel is an image of quality and <br>
+                                profesionalism combined with hard work <br>
+                                and precision. You can expect only the <br>
+                                best services from our staff.
+                            </p>
+                            <div class="link">
+                                <a href="#" class="btn btn-primary rounded-circle mr-2">
+                                    <i class="feather-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-primary rounded-circle mr-2">
+                                    <i class="feather-twitter"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger rounded-circle">
+                                    <i class="feather-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6 col-lg-2">
+                        <div class="text-white">
+                            <p class="my-4" style="font-size: 20px">Useful links</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#" class="text-primary text-decoration-none">Blog</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-primary text-decoration-none">Rooms</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-primary text-decoration-none">Gift Card</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-primary text-decoration-none">Testimonials</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6  col-lg-2">
+                        <div class="text-white">
+                            <p class="my-4" style="font-size: 20px">Privacy</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#" class="text-primary text-decoration-none">Career</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-primary text-decoration-none">About Us</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-primary text-decoration-none">Contact Us</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-primary text-decoration-none">Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6  col-lg-3">
+                        <div class="text-white">
+                            <p class="my-4" style="font-size: 20px">Contact Info</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <div class="d-flex">
+                                        <i class="feather-mail text-primary mr-2" style="font-size: 25px"></i>
+                                        <p>example@yahoo.com</p>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex">
+                                        <i class="feather-phone text-primary mr-2" style="font-size: 25px"></i>
+                                        <p>+3 320 422 4254</p>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex">
+                                        <i class="feather-map-pin text-primary mr-2" style="font-size: 25px"></i>
+                                        <p>Main Str Chicago Ilinois</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<!--room last sheet photos end-->
+
+<script src="vendor/jquery/dist/jquery.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="vendor/venobox/venobox.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="vendor/slick-1.8.1/slick/slick.min.js"></script>
+<script src="vendor/wow.js/dist/wow.js"></script>
+<script src="js/rooms.js"></script>
+
+</body>
+</html>
+
+
+
+
+

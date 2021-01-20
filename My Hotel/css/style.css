@@ -1,0 +1,372 @@
+/*font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+.nav-list{
+    font-size: 14px;
+}
+.nav-bar{
+    position: absolute;
+    top: 12px;
+    z-index: 10;
+}
+.navbar-nav a{
+    transition: 0.5s;
+}
+.navbar-nav a:hover{
+    color: red !important;
+}
+.nav-show{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.58);
+    top: 2px;
+    z-index: 500;
+    animation: dropNav 0.5s linear;
+}
+@keyframes dropNav{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+.home-one{
+    background-image: url("../homepage-img/Group 9@2x.png");
+    background-repeat: no-repeat;
+    position: relative;
+}
+.show-active{
+    background-color: #fff !important;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px #cbcbcb;
+    color: #000 !important;
+}
+.show-active a{
+    color: #000 !important;
+}
+.home-content{
+    margin: 40% auto;
+}
+.home-content-header{
+    font-family: 'Lato', sans-serif;
+    word-spacing: 10px;
+    font-size: 3.5em;
+}
+.home-content-text{
+    width: 60%;
+    text-align: justify;
+}
+.navbar-toggler{
+    padding: 0 !important;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+.check-date{
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: -80px;
+    padding: 30px 0px;
+    box-shadow: 0px 0px 10px gray;
+}
+.for-about{
+    margin-top: 170px;
+}
+.for-about-two{
+    margin-top: 170px;
+}
+.for-about-text{
+    width: 80%
+}
+.home-three{
+    background-image: url("../homepage-img/Group 13@2x.png");
+    background-repeat: no-repeat;
+}
+.for-about-second{
+    margin-top: 90px;
+}
+.slick-dots{
+    display: flex !important;
+    align-items: flex-start;
+}
+
+
+.slick-dots li button{
+    background-color: #e5e5e5;
+    padding: 0 !important;
+    border-radius: 50%;
+}
+
+.slick-dots li button:before{
+    content : "" !important;
+    /*width: 70%;*/
+    /*height: 70%;*/
+    /*background-color: #c6c6c6;*/
+    /*border-radius: 50%;*/
+}
+.slick-dots li.slick-active{
+    background-color : #007bff !important;
+    border-radius: 50%;
+}
+.slick-active button{
+    background-color: #007bff !important;
+}
+.slick-slide:focus{
+    outline: none;
+}
+.big{
+    transition: 0.5s;
+}
+.big:hover{
+    box-shadow: 2px 10px 10px #4e4e4e;
+    transform: scale(1.05);
+}
+.foot{
+  transition: 0.7s;
+}
+.foot:hover{
+    background-color: black !important;
+    color: #fff;
+    border-radius: 0.25rem;
+}
+.foot:hover .food-type{
+    color: #fff !important;
+    font-weight: bold;
+}
+.foot:hover .food-review{
+    color: #848383 !important;
+}
+.more{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.foot:hover .more{
+    background-color: #fff;
+    color: #007bff;
+}
+.blog-item{
+    transition: 0.5s;
+}
+.blog-item:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 5px #bdbdbd;
+}
+
+/*CSS for rooms*/
+.rooms-check-date{
+    background-color: #fff;
+    width: 100%;
+    padding: 30px 0px;
+    box-shadow: 0px 0px 10px #cdcdcd;
+}
+.home-rooms{
+    background-image: url("../roomspage-img/Rectangle 193@2x.png"),url("../roomspage-img/mohamed-ajufaan-GFcWwwGNu_w-unsplash@2x.png");
+    background-repeat: no-repeat;
+    position: relative;
+}
+.home-room-content{
+    margin: 27% auto;
+}
+.home-content-rooms-header{
+    font-family: 'Lato', sans-serif;
+    word-spacing: 10px;
+    font-size: 2em;
+}
+.for-about-rooms{
+    margin-top: 50px;
+}
+.for-about-rooms-two{
+    margin-top: 50px;
+}
+.more-rooms{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.foot:hover .more-rooms{
+    background-color: #fff;
+    color: #007bff;
+}
+
+/*CSS for restaurant*/
+
+.for-about-restaurant{
+    margin-top: 50px;
+}
+.for-about-restaurant-two{
+    margin-top: 50px;
+}
+
+
+/*CSS for Contact*/
+.contact-form{
+    height: 45px;
+}
+
+
+
+.delay-half{
+    animation-delay: 0.5s;
+}
+.delayOne-half{
+    animation-delay: 1.5s;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+  .show-active{
+      padding-left: 5px;
+  }
+    .navbar-nav .dropdown-menu{
+        position: absolute !important;
+        width: 100%;
+    }
+    .navbar-nav > li{
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+        background-color: #007bff;
+        border-radius: 2px;
+    }
+    .dropdown-toggle::after{
+       margin-left: 290px !important;
+    }
+    .nav-item a{
+        margin-left: 20px;
+    }
+    .navbar-collapse{
+        margin-top: 20px;
+        box-shadow: 0px 0px 5px gray inset;
+    }
+    .home-content{
+        margin: 50% auto;
+    }
+    .home-content-header{
+        word-spacing: 0;
+        font-size: 3em;
+    }
+    .home-content-text{
+        width: 70%;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .check-date{
+        bottom: -110px;
+    }
+    .for-about{
+        margin-top: 30px;
+    }
+
+    .for-about-two{
+        margin-top: 160px;
+    }
+    .for-about-text{
+        width: 100%
+    }
+    .home-three{
+        margin-top: 80px;
+        height: 80vh !important;
+    }
+    .for-about-second{
+        margin-top: 60px;
+    }
+    .ph-img{
+      
+    }
+    .ph-slide{
+        padding:30px 6px !important;
+    }
+    .more{
+        top: 0 !important;
+        bottom: 120px;
+    }
+    .customer-text{
+        font-size: 11px;
+    }
+    .home-four{
+        height: 100vh !important;
+    }
+    .rooms-check-date{
+        margin: 0 !important;
+    }
+    .for-about-restaurant{
+        margin-top: 50px;
+        margin-left: 0 !important;
+    }
+    .for-about-restaurant-two{
+        margin-top: 50px;
+        margin-right: 0 !important;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 700px) and (max-width: 800px){
+    .show-active{
+        padding-left: 5px;
+    }
+    .navbar-nav .dropdown-menu{
+        position: absolute !important;
+        width: 100%;
+    }
+    .navbar-nav > li{
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+        background-color: #007bff;
+        border-radius: 2px;
+    }
+    .dropdown-toggle::after{
+        margin-left: 580px !important;
+    }
+    .nav-item a{
+        margin-left: 20px;
+    }
+    .navbar-collapse{
+        margin-top: 20px;
+        box-shadow: 0px 0px 5px gray inset;
+    }
+    .home-content{
+        margin: 35% auto;
+    }
+    .home-content-header{
+        word-spacing: 0;
+        font-size: 3em;
+    }
+    .home-content-text{
+        width: 70%;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .check-date{
+        bottom: -120px;
+    }
+    .for-about{
+        margin-top: 50px;
+    }
+    .for-about-two{
+        margin-top: -80px;
+    }
+    .for-about-text{
+        width: 100%
+    }
+    .home-three{
+        margin-top: 30px;
+        height: 60vh !important;
+    }
+    .for-about-second{
+        margin-top: 60px;
+    }
+    .ph-slide{
+        padding:20px 60px !important;
+    }
+
+}
+
